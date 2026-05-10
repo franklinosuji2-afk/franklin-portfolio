@@ -1,19 +1,15 @@
-"use client"
+﻿"use client"
 import { useState, useEffect } from "react"
-
 const links = [
   { href: "#about", label: "About" },
   { href: "#skills", label: "Skills" },
   { href: "#projects", label: "Projects" },
   { href: "#experience", label: "Experience" },
   { href: "#certifications", label: "Certs" },
-  { href: "#terminal", label: "Terminal" },
   { href: "#contact", label: "Contact" },
 ]
-
 export default function Nav() {
   const [scrolled, setScrolled] = useState(false)
-  const [open, setOpen] = useState(false)
   useEffect(() => {
     const fn = () => setScrolled(window.scrollY > 40)
     window.addEventListener("scroll", fn)
@@ -29,11 +25,18 @@ export default function Nav() {
         <div style={{display:"flex",alignItems:"center",gap:"4px"}}>
           {links.map(l => (
             <a key={l.href} href={l.href} style={{padding:"6px 12px",fontSize:"14px",color:"#8b949e",textDecoration:"none",borderRadius:"6px",transition:"all 0.15s"}}
-              onMouseEnter={e=>(e.currentTarget.style.color="#fff")} onMouseLeave={e=>(e.currentTarget.style.color="#8b949e")}>
+              onMouseEnter={e=>e.currentTarget.style.color="#fff"} onMouseLeave={e=>e.currentTarget.style.color="#8b949e"}>
               {l.label}
             </a>
           ))}
-          <a href="/Franklin_CV.pdf" download style={{marginLeft:"12px",padding:"6px 16px",fontSize:"14px",fontWeight:600,color:"#fff",background:"#2563eb",borderRadius:"6px",textDecoration:"none"}}>
+          <a href="https://linkedin.com/in/franklin-osuji-a96003321" target="_blank" rel="noreferrer"
+            style={{marginLeft:"8px",padding:"6px 14px",fontSize:"14px",color:"#0a66c2",border:"1px solid rgba(10,102,194,0.2)",borderRadius:"6px",textDecoration:"none",fontWeight:600}}
+            onMouseEnter={e=>e.currentTarget.style.background="rgba(10,102,194,0.1)"}
+            onMouseLeave={e=>e.currentTarget.style.background="transparent"}>
+            LinkedIn
+          </a>
+          <a href="/Franklin_CV.pdf" download
+            style={{marginLeft:"8px",padding:"6px 16px",fontSize:"14px",fontWeight:600,color:"#fff",background:"#2563eb",borderRadius:"6px",textDecoration:"none"}}>
             Resume
           </a>
         </div>
