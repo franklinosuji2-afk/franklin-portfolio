@@ -1,18 +1,27 @@
 ﻿"use client"
 export default function Footer() {
   return (
-    <footer style={{borderTop:"1px solid #1e2d40",background:"#070a0f",padding:"40px 24px"}}>
-      <div style={{maxWidth:"1200px",margin:"0 auto",display:"flex",flexDirection:"column",alignItems:"center",gap:"16px",textAlign:"center"}}>
-        <div style={{fontFamily:"monospace",fontSize:"14px",fontWeight:600,color:"#fff"}}>Franklin Chinonso Osuji</div>
-        <div style={{fontFamily:"monospace",fontSize:"12px",color:"#484f58",fontStyle:"italic"}}>"Infrastructure as code. Reliability by design. Automation at scale."</div>
-        <div style={{display:"flex",gap:"24px"}}>
-          <a href="https://github.com/franklinosuji2-afk" target="_blank" rel="noreferrer" style={{fontSize:"13px",color:"#484f58",textDecoration:"none",fontFamily:"monospace"}} onMouseEnter={e=>e.currentTarget.style.color="#fff"} onMouseLeave={e=>e.currentTarget.style.color="#484f58"}>GitHub</a>
-          <a href="https://linkedin.com/in/franklin-osuji-a96003321" target="_blank" rel="noreferrer" style={{fontSize:"13px",color:"#484f58",textDecoration:"none",fontFamily:"monospace"}} onMouseEnter={e=>e.currentTarget.style.color="#0a66c2"} onMouseLeave={e=>e.currentTarget.style.color="#484f58"}>LinkedIn</a>
-          <a href="mailto:franklin.osuji2@gmail.com" style={{fontSize:"13px",color:"#484f58",textDecoration:"none",fontFamily:"monospace"}} onMouseEnter={e=>e.currentTarget.style.color="#fff"} onMouseLeave={e=>e.currentTarget.style.color="#484f58"}>Email</a>
-          <a href="/cv.html" target="_blank" style={{fontSize:"13px",color:"#484f58",textDecoration:"none",fontFamily:"monospace"}} onMouseEnter={e=>e.currentTarget.style.color="#60a5fa"} onMouseLeave={e=>e.currentTarget.style.color="#484f58"}>CV</a>
-          <a href="https://www.credly.com/badges/914031f2-e5b2-4e4e-b408-2d512d91566d/public_url" target="_blank" rel="noreferrer" style={{fontSize:"13px",color:"#484f58",textDecoration:"none",fontFamily:"monospace"}} onMouseEnter={e=>e.currentTarget.style.color="#f97316"} onMouseLeave={e=>e.currentTarget.style.color="#484f58"}>Credly</a>
+    <footer style={{borderTop:"1px solid #1e2d40",background:"#060a0f",padding:"40px 24px"}}>
+      <div style={{maxWidth:"1200px",margin:"0 auto"}}>
+        <div style={{display:"flex",justifyContent:"space-between",alignItems:"flex-start",flexWrap:"wrap",gap:"24px",marginBottom:"32px"}}>
+          <div>
+            <div style={{fontFamily:"monospace",fontSize:"14px",fontWeight:700,color:"#fff",marginBottom:"4px"}}>Franklin Chinonso Osuji</div>
+            <div style={{fontSize:"13px",color:"#484f58",marginBottom:"8px"}}>Cloud & DevOps Engineer | AWS Certified | Berlin</div>
+            <div style={{display:"flex",alignItems:"center",gap:"6px"}}>
+              <span style={{width:"6px",height:"6px",borderRadius:"50%",background:"#4ade80",display:"inline-block"}} />
+              <span style={{fontSize:"12px",color:"#4ade80",fontFamily:"monospace"}}>Open to opportunities</span>
+            </div>
+          </div>
+          <div style={{display:"flex",gap:"12px",flexWrap:"wrap"}}>
+            {[{label:"GitHub",href:"https://github.com/franklinosuji2-afk"},{label:"LinkedIn",href:"https://linkedin.com/in/franklin-osuji-a96003321"},{label:"Email",href:"mailto:franklin.osuji2@gmail.com"},{label:"CV",href:"/cv.html"},{label:"Credly",href:"https://www.credly.com/badges/914031f2-e5b2-4e4e-b408-2d512d91566d/public_url"}].map(s=>(
+              <a key={s.label} href={s.href} target="_blank" rel="noreferrer" style={{fontSize:"13px",color:"#484f58",textDecoration:"none",fontFamily:"monospace",padding:"6px 12px",border:"1px solid #1e2d40",borderRadius:"5px",transition:"color 0.2s"}} onMouseEnter={e=>e.currentTarget.style.color="#fff"} onMouseLeave={e=>e.currentTarget.style.color="#484f58"}>{s.label}</a>
+            ))}
+          </div>
         </div>
-        <div style={{fontSize:"12px",color:"#484f58",fontFamily:"monospace"}}>2026 Franklin Chinonso Osuji - All rights reserved</div>
+        <div style={{borderTop:"1px solid #1e2d40",paddingTop:"24px",display:"flex",justifyContent:"space-between",flexWrap:"wrap",gap:"12px"}}>
+          <div style={{fontFamily:"monospace",fontSize:"11px",color:"#484f58"}}>"Infrastructure as code. Reliability by design. Automation at scale."</div>
+          <div style={{fontFamily:"monospace",fontSize:"11px",color:"#484f58"}}>2026 Franklin Chinonso Osuji</div>
+        </div>
       </div>
     </footer>
   )
