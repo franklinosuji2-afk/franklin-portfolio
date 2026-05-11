@@ -10,21 +10,19 @@ export default function CertBadge() {
   }, [])
   return (
     <a href="https://www.credly.com/badges/914031f2-e5b2-4e4e-b408-2d512d91566d/public_url" target="_blank" rel="noreferrer"
-      style={{position:"fixed",bottom:"32px",right:"32px",zIndex:999,display:visible?"flex":"none",alignItems:"center",gap:"12px",padding:"12px 20px",background:"linear-gradient(135deg,#0d1117,#0f1f0f)",border:"1px solid rgba(34,197,94,0.5)",borderRadius:"12px",textDecoration:"none",boxShadow:"0 0 30px rgba(34,197,94,0.2), 0 8px 32px rgba(0,0,0,0.4)",backdropFilter:"blur(12px)",transition:"all 0.3s"}}
-      onMouseEnter={e=>{e.currentTarget.style.boxShadow="0 0 50px rgba(34,197,94,0.4)";e.currentTarget.style.transform="translateY(-2px)"}}
-      onMouseLeave={e=>{e.currentTarget.style.boxShadow="0 0 30px rgba(34,197,94,0.2)";e.currentTarget.style.transform="translateY(0)"}}>
-      <div style={{width:"40px",height:"40px",borderRadius:"50%",background:"linear-gradient(135deg,#f97316,#ea580c)",display:"flex",alignItems:"center",justifyContent:"center",flexShrink:0,boxShadow:"0 0 15px rgba(249,115,22,0.4)"}}>
-        <span style={{color:"#fff",fontWeight:900,fontSize:"11px",fontFamily:"monospace"}}>AWS</span>
+      style={{position:"fixed",bottom:"20px",right:"20px",zIndex:999,display:visible?"flex":"none",alignItems:"center",gap:"8px",padding:"7px 12px",background:"rgba(6,10,15,0.95)",border:"1px solid rgba(34,197,94,0.4)",borderRadius:"8px",textDecoration:"none",boxShadow:"0 0 20px rgba(34,197,94,0.1)",backdropFilter:"blur(12px)",transition:"all 0.3s"}}
+      onMouseEnter={e=>{e.currentTarget.style.boxShadow="0 0 30px rgba(34,197,94,0.25)";e.currentTarget.style.transform="translateY(-2px)"}}
+      onMouseLeave={e=>{e.currentTarget.style.boxShadow="0 0 20px rgba(34,197,94,0.1)";e.currentTarget.style.transform="translateY(0)"}}>
+      <div style={{width:"24px",height:"24px",borderRadius:"50%",background:"linear-gradient(135deg,#f97316,#ea580c)",display:"flex",alignItems:"center",justifyContent:"center",flexShrink:0}}>
+        <span style={{color:"#fff",fontWeight:900,fontSize:"7px",fontFamily:"monospace"}}>AWS</span>
       </div>
       <div>
-        <div style={{display:"flex",alignItems:"center",gap:"6px",marginBottom:"2px"}}>
-          <span style={{width:"6px",height:"6px",borderRadius:"50%",background:"#4ade80",display:"inline-block",boxShadow:"0 0 6px #4ade80"}} />
-          <span style={{fontSize:"10px",color:"#4ade80",fontFamily:"monospace",letterSpacing:"2px",fontWeight:600}}>VERIFIED ACTIVE</span>
+        <div style={{display:"flex",alignItems:"center",gap:"4px",marginBottom:"1px"}}>
+          <span style={{width:"5px",height:"5px",borderRadius:"50%",background:"#4ade80",display:"inline-block"}} />
+          <span style={{fontSize:"9px",color:"#4ade80",fontFamily:"monospace",letterSpacing:"1px"}}>VERIFIED</span>
         </div>
-        <div style={{fontSize:"13px",fontWeight:700,color:"#fff",lineHeight:1.2}}>AWS Certified</div>
-        <div style={{fontSize:"11px",color:"#8b949e",fontFamily:"monospace"}}>Cloud Practitioner</div>
+        <div style={{fontSize:"10px",fontWeight:600,color:"#fff",lineHeight:1}}>AWS Certified</div>
       </div>
-      <div style={{marginLeft:"4px",color:"#4ade80",fontSize:"16px"}}>→</div>
     </a>
   )
 }
