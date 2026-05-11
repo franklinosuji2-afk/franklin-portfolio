@@ -1,21 +1,22 @@
 ﻿"use client"
 const cats = [
-  { title:"Cloud Platforms", color:"#3b82f6", skills:["AWS EC2","S3","IAM","VPC","Lambda","ECS","Fargate","RDS","Route 53","CloudFormation"] },
+  { title:"Cloud Platforms", color:"#3b82f6", skills:["AWS EC2","ECS","Fargate","S3","IAM","VPC","Route 53","Lambda","RDS","CloudWatch","CloudFormation"] },
   { title:"Infrastructure as Code", color:"#8b5cf6", skills:["Terraform","AWS CloudFormation"] },
-  { title:"CI/CD & Automation", color:"#f97316", skills:["Jenkins","GitHub Actions","CI/CD Pipelines","Automated Deployments"] },
-  { title:"Containers & Orchestration", color:"#06b6d4", skills:["Docker","Amazon ECS","AWS Fargate","Container Optimization"] },
-  { title:"Programming & Scripting", color:"#22c55e", skills:["Python","Bash","SQL"] },
-  { title:"Monitoring & Reliability", color:"#ec4899", skills:["Amazon CloudWatch","Linux Administration","Incident Response"] },
-  { title:"Databases", color:"#eab308", skills:["PostgreSQL","DynamoDB","AWS RDS"] },
+  { title:"Containers & Orchestration", color:"#06b6d4", skills:["Docker","Amazon ECS","AWS Fargate"] },
+  { title:"CI/CD & Automation", color:"#f97316", skills:["GitHub Actions","Jenkins","CI/CD Pipelines"] },
+  { title:"Operating Systems & Monitoring", color:"#22c55e", skills:["Linux Administration","AWS CloudWatch","Incident Response","System Monitoring"] },
+  { title:"Programming & Scripting", color:"#eab308", skills:["Python","Bash","SQL"] },
+  { title:"Databases", color:"#ec4899", skills:["PostgreSQL (AWS RDS)","DynamoDB"] },
 ]
 export default function Skills() {
   return (
     <section id="skills" className="section-pad" style={{background:"#0a0e17"}}>
       <div style={{maxWidth:"1200px",margin:"0 auto"}}>
         <div style={{marginBottom:"40px"}}>
-          <div style={{fontFamily:"monospace",fontSize:"12px",color:"#3b82f6",letterSpacing:"4px",marginBottom:"12px"}}>// TECH_STACK</div>
-          <h2 style={{fontSize:"clamp(24px,4vw,40px)",fontWeight:700,color:"#fff",marginBottom:"16px"}}>Technical Skills</h2>
-          <div style={{width:"48px",height:"2px",background:"#3b82f6"}} />
+          <div style={{fontFamily:"monospace",fontSize:"11px",color:"#3b82f6",letterSpacing:"4px",marginBottom:"12px"}}>// CORE_TECHNOLOGIES</div>
+          <h2 style={{fontSize:"clamp(24px,4vw,38px)",fontWeight:700,color:"#fff",marginBottom:"12px"}}>Technical Skills</h2>
+          <div style={{width:"40px",height:"2px",background:"#3b82f6"}} />
+          <p style={{marginTop:"16px",color:"#8b949e",fontSize:"13px",fontFamily:"monospace"}}>Production-tested technologies across real infrastructure deployments</p>
         </div>
         <div className="grid-3col">
           {cats.map(c=>(

@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 import { useState, useEffect } from "react";
 const lines = [
   "$ terraform init",
@@ -219,7 +219,7 @@ export default function Hero() {
                 maxWidth: "520px",
               }}
             >
-              AWS-Certified Cloud & DevOps Engineer specialising in Terraform,
+              AWS-Certified Cloud Infrastructure & DevOps Engineer specialising in Terraform,
               ECS/Fargate, and CI/CD automation. Based in Berlin, open to Cloud,
               DevOps, and SRE roles across Germany and Europe.
             </p>
@@ -331,7 +331,7 @@ export default function Hero() {
                   textDecoration: "none",
                 }}
               >
-                ☎ +49 152 59380812
+                ? +49 152 59380812
               </a>
             </div>
             {/* Links */}

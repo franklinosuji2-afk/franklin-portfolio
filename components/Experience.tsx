@@ -1,22 +1,25 @@
 ﻿"use client"
 const exps = [
-  {title:"Cloud Engineer",company:"MacVoltex System Limited",location:"Nigeria - Remote",period:"APR 2026 - PRESENT",type:"Contract",bullets:["Engineered scalable AWS and Azure infrastructure, improving deployment efficiency and system reliability by 30%","Automated CI/CD pipelines and cloud deployments, reducing deployment time by 35%","Optimized cloud operations and infrastructure costs while improving platform stability"],tags:["AWS","Azure","Terraform","CI/CD","Docker","Kubernetes"]},
-  {title:"Cloud & DevOps Engineer",company:"Freelance",location:"Remote",period:"JUL 2023 - AUG 2024",type:"Freelance",bullets:["Automated cloud provisioning and deployment workflows, accelerating client onboarding","Led deployment of key modules within Oracle E-Business Suite used by 90% of internal staff","Resolved infrastructure issues to maintain high system availability and performance"],tags:["AWS","Terraform","Oracle EBS","Python","Bash"]},
-  {title:"E-commerce & Digital Marketing Specialist",company:"PAPER & TEA",location:"Berlin, Germany",period:"MAR 2020 - APR 2023",type:"Full-time",bullets:["Automated reporting and maintenance tasks using Bash and Python scripting","Increased organic traffic by 25% and improved conversion rates by 15% through SEO and A/B testing"],tags:["Python","Bash","SEO","Analytics"]},
+  {title:"Cloud Engineer",company:"MacVoltex System Limited",location:"Remote",period:"APR 2026 - PRESENT",type:"Contract",bullets:["Designed and deployed scalable AWS and Azure cloud infrastructure, improving deployment efficiency and enhancing platform reliability across production environments","Automated infrastructure provisioning and deployment workflows using Terraform and CI/CD pipelines, reducing manual configuration overhead and improving operational consistency","Implemented containerized deployment strategies using Docker and cloud-native services, improving scalability and deployment speed","Optimized cloud resource utilization and infrastructure architecture, contributing to reduced operational costs and improved system performance","Collaborated with development teams to support secure, reliable, and highly available cloud-based applications"],tags:["AWS","Azure","Terraform","Docker","CI/CD","CloudWatch"]},
+  {title:"DevOps Engineer Trainee — Work Study / Internship",company:"Digital Career Institute (DCI)",location:"Berlin, Germany",period:"NOV 2024 - MAR 2026",type:"Internship",bullets:["Designed automated CI/CD pipelines using Jenkins and GitHub Actions","Built Infrastructure as Code solutions with Terraform for repeatable deployments","Managed EC2, S3, IAM, VPC, Lambda, and RDS in team cloud projects","Deployed scalable ECS Fargate workloads with Blue/Green deployment strategies"],tags:["AWS","Jenkins","Terraform","Docker","GitHub Actions"]},
+  {title:"Consultant / Freelancer | Cloud & DevOps Engineer",company:"Basecamp: Outdoor Jobs, Freelance Gigs, Networking",location:"Remote",period:"JUL 2023 - AUG 2024",type:"Freelance",bullets:["Automated cloud infrastructure provisioning and deployment processes, accelerating onboarding and reducing deployment time for client environments","Designed and deployed cloud-based infrastructure solutions using AWS services, Docker, and infrastructure automation practices","Diagnosed and resolved infrastructure, Linux server, and deployment-related issues to maintain platform reliability and operational continuity","Supported CI/CD workflow implementation and automated deployment pipelines for improved software delivery efficiency","Contributed to Oracle E-Business Suite deployment and operational support initiatives, driving successful internal adoption across business units"],tags:["AWS","Terraform","Docker","CI/CD","Oracle EBS","Python","Bash"]},
+  {title:"E-commerce & Digital Marketing Specialist",company:"PAPER & TEA",location:"Berlin, Germany",period:"MAR 2020 - APR 2023",type:"Full-time",bullets:["Automated operational and reporting workflows using Bash and Python scripting, improving internal efficiency and reducing repetitive manual tasks","Managed technical website optimization initiatives that improved website performance, SEO visibility, and digital conversion metrics","Increased organic web traffic by 25% through data-driven optimization strategies and improved conversion rates by 15% using A/B testing","Collaborated with cross-functional teams to improve digital operations, reporting accuracy, and customer engagement performance"],tags:["Python","Bash","SEO","Analytics","A/B Testing"]},
+  {title:"Salesperson",company:"Modulor GmbH",location:"Berlin, Germany - On-site",period:"AUG 2016 - APR 2019",type:"Full-time",bullets:["Managed customer relationships and drove sales across product categories","Applied data-driven approaches using Python for sales reporting and performance tracking"],tags:["Sales Management","Python"]},
 ]
 const typeColor: Record<string,{color:string,border:string,bg:string}> = {
   Contract:{color:"#4ade80",border:"rgba(74,222,128,0.3)",bg:"rgba(74,222,128,0.05)"},
+  Internship:{color:"#60a5fa",border:"rgba(96,165,250,0.3)",bg:"rgba(96,165,250,0.05)"},
   Freelance:{color:"#c084fc",border:"rgba(192,132,252,0.3)",bg:"rgba(192,132,252,0.05)"},
-  "Full-time":{color:"#60a5fa",border:"rgba(96,165,250,0.3)",bg:"rgba(96,165,250,0.05)"},
+  "Full-time":{color:"#34d399",border:"rgba(52,211,153,0.3)",bg:"rgba(52,211,153,0.05)"},
 }
 export default function Experience() {
   return (
-    <section id="experience" style={{padding:"112px 24px",background:"#0a0e17"}}>
+    <section id="experience" className="section-pad" style={{background:"#0a0e17"}}>
       <div style={{maxWidth:"1200px",margin:"0 auto"}}>
         <div style={{marginBottom:"48px"}}>
-          <div style={{fontFamily:"monospace",fontSize:"12px",color:"#3b82f6",letterSpacing:"4px",marginBottom:"12px"}}>// EXPERIENCE</div>
-          <h2 style={{fontSize:"40px",fontWeight:700,color:"#fff",marginBottom:"16px"}}>Career Timeline</h2>
-          <div style={{width:"48px",height:"2px",background:"#3b82f6"}} />
+          <div style={{fontFamily:"monospace",fontSize:"11px",color:"#3b82f6",letterSpacing:"4px",marginBottom:"12px"}}>// EXPERIENCE</div>
+          <h2 style={{fontSize:"clamp(24px,4vw,38px)",fontWeight:700,color:"#fff",marginBottom:"12px"}}>Career Timeline</h2>
+          <div style={{width:"40px",height:"2px",background:"#3b82f6"}} />
         </div>
         <div style={{position:"relative",paddingLeft:"32px"}}>
           <div style={{position:"absolute",left:0,top:0,bottom:0,width:"1px",background:"linear-gradient(to bottom,#3b82f6,#1e2d40)"}} />
@@ -28,11 +31,11 @@ export default function Experience() {
                   <div style={{position:"absolute",left:"-40px",top:"28px",width:"16px",height:"16px",borderRadius:"50%",border:`2px solid ${i===0?"#4ade80":"#3b82f6"}`,background:"#070a0f",display:"flex",alignItems:"center",justifyContent:"center"}}><div style={{width:"6px",height:"6px",borderRadius:"50%",background:i===0?"#4ade80":"#3b82f6"}} /></div>
                   <div style={{display:"flex",justifyContent:"space-between",flexWrap:"wrap",gap:"12px",marginBottom:"16px"}}>
                     <div>
-                      <div style={{display:"flex",alignItems:"center",gap:"10px",marginBottom:"4px"}}>
-                        <h3 style={{fontSize:"18px",fontWeight:700,color:"#fff"}}>{exp.title}</h3>
+                      <div style={{display:"flex",alignItems:"center",gap:"10px",marginBottom:"4px",flexWrap:"wrap"}}>
+                        <h3 style={{fontSize:"17px",fontWeight:700,color:"#fff"}}>{exp.title}</h3>
                         {i===0&&<span style={{fontSize:"11px",fontFamily:"monospace",padding:"2px 8px",borderRadius:"999px",color:"#4ade80",border:"1px solid rgba(74,222,128,0.3)",background:"rgba(74,222,128,0.05)"}}>CURRENT</span>}
                       </div>
-                      <div style={{fontSize:"14px",color:"#8b949e"}}>{exp.company} | {exp.location}</div>
+                      <div style={{fontSize:"13px",color:"#8b949e"}}>{exp.company} | {exp.location}</div>
                     </div>
                     <div style={{display:"flex",flexDirection:"column",alignItems:"flex-end",gap:"6px"}}>
                       <span style={{fontFamily:"monospace",fontSize:"12px",color:"#3b82f6"}}>{exp.period}</span>
@@ -48,13 +51,6 @@ export default function Experience() {
                 </div>
               )
             })}
-            <div style={{position:"relative",padding:"24px",borderRadius:"12px",border:"1px solid #1e2d40",background:"#0d1117"}}>
-              <div style={{position:"absolute",left:"-40px",top:"28px",width:"16px",height:"16px",borderRadius:"50%",border:"2px solid #1e2d40",background:"#070a0f"}} />
-              <div style={{display:"flex",justifyContent:"space-between",flexWrap:"wrap",gap:"12px"}}>
-                <div><h3 style={{fontSize:"18px",fontWeight:700,color:"#fff",marginBottom:"4px"}}>B.Eng. Petroleum Engineering</h3><div style={{fontSize:"14px",color:"#8b949e"}}>Federal University of Technology, Owerri (FUTO)</div></div>
-                <div style={{textAlign:"right"}}><div style={{fontFamily:"monospace",fontSize:"12px",color:"#484f58"}}>2012 - 2016</div><div style={{fontSize:"12px",color:"#22c55e",marginTop:"4px"}}>Second Class Honours (Upper Division)</div></div>
-              </div>
-            </div>
           </div>
         </div>
       </div>

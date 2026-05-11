@@ -1,20 +1,20 @@
 ﻿"use client"
 const certs = [
-  {issuer:"AMAZON WEB SERVICES",name:"AWS Certified Cloud Practitioner",period:"Aug 2025 - Aug 2028",status:"VERIFIED",color:"#22c55e",verify:"https://www.credly.com/badges/914031f2-e5b2-4e4e-b408-2d512d91566d/public_url"},
+  {issuer:"AMAZON WEB SERVICES",name:"AWS Certified Cloud Practitioner",period:"Aug 2025 - Aug 2028",status:"ACTIVE",color:"#22c55e",verify:"https://www.credly.com/badges/914031f2-e5b2-4e4e-b408-2d512d91566d/public_url"},
   {issuer:"HASHICORP",name:"HashiCorp Certified Terraform Associate",period:"Exam Scheduled",status:"IN PROGRESS",color:"#f97316"},
   {issuer:"AMAZON WEB SERVICES",name:"AWS Certified Solutions Architect - Associate",period:"Expected: 2026",status:"IN PROGRESS",color:"#f97316"},
-  {issuer:"DIGITAL CAREER INSTITUTE (DCI)",name:"DevOps and Cloud Engineering Program",period:"November 2024 - March 2026",status:"COMPLETED",color:"#3b82f6",note:"1,800 units of immersive training in CI/CD pipelines and DevOps workflows."},
-  {issuer:"DIGITAL CAREER INSTITUTE (DCI)",name:"Testing Center for Digital Professions",period:"Nov - Dec 2024",status:"COMPLETED",color:"#3b82f6",note:"160 teaching units covering technical assessment and certification readiness."},
-  {issuer:"FEDERAL UNIVERSITY OF TECHNOLOGY, OWERRI",name:"Bachelor of Engineering - Petroleum Engineering",period:"Jan 2012 - Sep 2016",status:"COMPLETED",color:"#3b82f6",note:"Second Class Honours (Upper Division)"},
+  {issuer:"DIGITAL CAREER INSTITUTE (DCI)",name:"DevOps & Cloud Engineering Program",period:"Nov 2024 - Mar 2026",status:"COMPLETED",color:"#3b82f6",note:"1,800 units. Focus: Cloud Infrastructure, Automation, CI/CD Engineering, Linux Administration, Containerization & Deployment Workflows."},
+  {issuer:"DIGITAL CAREER INSTITUTE (DCI)",name:"DCI Professional Training Certificate",period:"Nov 2024 - Mar 2026",status:"COMPLETED",color:"#3b82f6"},
+  {issuer:"FEDERAL UNIVERSITY OF TECHNOLOGY, OWERRI (FUTO)",name:"B.Eng. Petroleum Engineering",period:"Jan 2012 - Sep 2016",status:"COMPLETED",color:"#3b82f6",note:"Second Class Honours (Upper Division)"},
 ]
 export default function Certifications() {
   return (
     <section id="certifications" className="section-pad" style={{background:"#070a0f"}}>
       <div style={{maxWidth:"1200px",margin:"0 auto"}}>
         <div style={{marginBottom:"40px"}}>
-          <div style={{fontFamily:"monospace",fontSize:"12px",color:"#3b82f6",letterSpacing:"4px",marginBottom:"12px"}}>// CERTIFICATIONS</div>
-          <h2 style={{fontSize:"clamp(24px,4vw,40px)",fontWeight:700,color:"#fff",marginBottom:"16px"}}>Credentials & Training</h2>
-          <div style={{width:"48px",height:"2px",background:"#3b82f6"}} />
+          <div style={{fontFamily:"monospace",fontSize:"11px",color:"#3b82f6",letterSpacing:"4px",marginBottom:"12px"}}>// EDUCATION_&_CERTIFICATIONS</div>
+          <h2 style={{fontSize:"clamp(24px,4vw,38px)",fontWeight:700,color:"#fff",marginBottom:"12px"}}>Education & Credentials</h2>
+          <div style={{width:"40px",height:"2px",background:"#3b82f6"}} />
         </div>
         <div className="grid-3col">
           {certs.map((cert,i)=>(
