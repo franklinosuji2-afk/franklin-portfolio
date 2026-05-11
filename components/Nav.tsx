@@ -1,12 +1,13 @@
 ﻿"use client"
 import { useState, useEffect } from "react"
 const links = [
-  { href: "#overview", label: "Overview" },
-  { href: "#skills", label: "Stack" },
-  { href: "#projects", label: "Projects" },
-  { href: "#architecture", label: "Arch" },
+  { href: "#home", label: "Home" },
   { href: "#experience", label: "Experience" },
-  { href: "#contact", label: "Contact" },
+  { href: "#projects", label: "Projects" },
+  { href: "#certifications", label: "Education" },
+  { href: "#skills", label: "Skills" },
+  { href: "#overview", label: "Stacks" },
+  { href: "#blog", label: "Blog" },
 ]
 export default function Nav() {
   const [scrolled, setScrolled] = useState(false)
@@ -20,7 +21,7 @@ export default function Nav() {
     <nav style={{position:"fixed",top:0,left:0,right:0,zIndex:50,background:scrolled||open?"rgba(6,10,15,0.98)":"transparent",borderBottom:scrolled||open?"1px solid #1e2d40":"none",backdropFilter:"blur(16px)",transition:"all 0.3s"}}>
       <div style={{maxWidth:"1200px",margin:"0 auto",padding:"0 24px",height:"60px",display:"flex",alignItems:"center",justifyContent:"space-between"}}>
         <a href="#" style={{display:"flex",alignItems:"center",gap:"8px",textDecoration:"none"}}>
-          <div style={{width:"30px",height:"30px",background:"rgba(59,130,246,0.1)",border:"1px solid rgba(59,130,246,0.3)",borderRadius:"6px",display:"flex",alignItems:"center",justifyContent:"center",color:"#60a5fa",fontFamily:"monospace",fontSize:"13px"}}>{"$"}</div>
+          <div style={{width:"32px",height:"32px",background:"rgba(59,130,246,0.1)",border:"1px solid rgba(59,130,246,0.3)",borderRadius:"6px",display:"flex",alignItems:"center",justifyContent:"center",fontFamily:"monospace",fontSize:"13px",fontWeight:700,color:"#60a5fa",letterSpacing:"0.5px"}}>FO</div>
           <span style={{fontFamily:"monospace",fontSize:"13px",fontWeight:600,color:"#fff"}}>franklin.osuji</span>
         </a>
         <div className="nav-links">
