@@ -27,7 +27,7 @@ export default function Nav() {
           </a>
           <div style={{paddingLeft:"12px",borderLeft:"1px solid #1e2d40",display:"flex",flexDirection:"column",gap:"3px"}}>
             <a href="tel:+4915259380812" style={{fontFamily:"monospace",fontSize:"11px",color:"#484f58",textDecoration:"none"}} onMouseEnter={e=>e.currentTarget.style.color="#fff"} onMouseLeave={e=>e.currentTarget.style.color="#484f58"}>+49 152 59380812</a>
-            <a href="mailto:franklin.osuji2@gmail.com" style={{fontFamily:"monospace",fontSize:"11px",color:"#484f58",textDecoration:"none"}} onMouseEnter={e=>e.currentTarget.style.color="#fff"} onMouseLeave={e=>e.currentTarget.style.color="#484f58"}>franklin.osuji2@gmail.com</a>
+            
           </div>
         </div>
         <div className="nav-links">
@@ -43,7 +43,7 @@ export default function Nav() {
         {links.map(l=>(<a key={l.href} href={l.href} onClick={()=>setOpen(false)} style={{padding:"12px 8px",fontSize:"15px",color:"#8b949e",textDecoration:"none",borderBottom:"1px solid #1e2d40",display:"block"}}>{l.label}</a>))}
         <a href="https://linkedin.com/in/franklin-osuji-a96003321" target="_blank" style={{padding:"12px 8px",fontSize:"15px",color:"#0a66c2",textDecoration:"none",borderBottom:"1px solid #1e2d40",display:"block",fontWeight:600}}>LinkedIn</a>
         <a href="tel:+4915259380812" style={{padding:"12px 8px",fontSize:"13px",color:"#484f58",textDecoration:"none",borderBottom:"1px solid #1e2d40",display:"block",fontFamily:"monospace"}}>+49 152 59380812</a>
-        <a href="mailto:franklin.osuji2@gmail.com" style={{padding:"12px 8px",fontSize:"13px",color:"#484f58",textDecoration:"none",borderBottom:"1px solid #1e2d40",display:"block",fontFamily:"monospace"}}>franklin.osuji2@gmail.com</a>
+        
         <a href="/cv.html" target="_blank" onClick={()=>setOpen(false)} style={{marginTop:"12px",padding:"12px",fontSize:"15px",fontWeight:600,color:"#fff",background:"#2563eb",borderRadius:"6px",textDecoration:"none",textAlign:"center",display:"block"}}>Download Resume</a>
       </div>
     </nav>
