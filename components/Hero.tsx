@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import { useState, useEffect } from "react";
 const lines = [
   "$ terraform init",
@@ -11,8 +11,8 @@ const lines = [
   "> All systems operational",
 ];
 const metrics = [
-  { value: "35%", label: "Faster Deployments", icon: "rocket" },
-  { value: "30%", label: "Reliability Improvement", icon: "shield" },
+  { value: "80%", label: "Faster Deployments", icon: "rocket" },
+  { value: "75%", label: "Reliability Improvement", icon: "shield" },
   { value: "99.9%", label: "Uptime Target", icon: "activity" },
 ];
 export default function Hero() {
@@ -331,7 +331,7 @@ export default function Hero() {
                   textDecoration: "none",
                 }}
               >
-                ? +49 152 59380812
+                
               </a>
             </div>
             {/* Links */}
