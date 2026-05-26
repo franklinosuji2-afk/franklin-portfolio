@@ -26,7 +26,7 @@ export default function Observability() {
         </div>
         <div style={{padding:"24px",borderRadius:"10px",border:"1px solid #1e2d40",background:"rgba(6,182,212,0.03)",marginBottom:"28px"}}>
           <div style={{display:"flex",alignItems:"center",justifyContent:"space-between",marginBottom:"20px",flexWrap:"wrap",gap:"8px"}}>
-            <div style={{fontFamily:"monospace",fontSize:"11px",color:"#06b6d4",letterSpacing:"2px"}}>SYSTEM DASHBOARD</div>
+            <div style={{fontFamily:"monospace",fontSize:"11px",color:"#06b6d4",letterSpacing:"2px"}}>EXAMPLE SLO DASHBOARD — TARGET METRICS</div>
             <div style={{display:"flex",alignItems:"center",gap:"6px"}}>
               <span style={{width:"6px",height:"6px",borderRadius:"50%",background:"#4ade80",display:"inline-block"}} />
               <span style={{fontSize:"11px",color:"#4ade80",fontFamily:"monospace"}}>All systems operational</span>

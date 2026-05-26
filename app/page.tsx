@@ -24,7 +24,7 @@ export default function Home() {
       <Certifications />
       <Skills />
       <TechStack />
-      <Blog />
+      
       <Observability />
       <Security />
       <Contact />

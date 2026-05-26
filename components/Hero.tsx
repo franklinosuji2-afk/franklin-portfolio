@@ -11,8 +11,8 @@ const lines = [
   "> All systems operational",
 ];
 const metrics = [
-  { value: "80%", label: "Faster Deployments", icon: "rocket" },
-  { value: "75%", label: "Reliability Improvement", icon: "shield" },
+  { value: "40%", label: "Faster Deployments", icon: "rocket" },
+  { value: "35%", label: "Reliability Improvement", icon: "shield" },
   { value: "99.9%", label: "Uptime Target", icon: "activity" },
 ];
 export default function Hero() {
